@@ -14,6 +14,8 @@ public class Movies {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "movie_id")
     private int movieId;
+    @Column(name = "title")
+    private String title;
     @Column(name= "genre")
     private String genre;
 
