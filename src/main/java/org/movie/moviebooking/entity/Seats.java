@@ -17,15 +17,11 @@ public class Seats {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "seat_id")
     private int seatId;
-
     @ManyToOne
     @JoinColumn(name="theater_id")
     private Theaters theaterId;
-
     @Column(name="seat_number")
     private String seatNumber;
-
     @Column(name="is_booked")
     private boolean isBooked;
-
 }
